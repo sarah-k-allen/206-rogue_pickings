@@ -66,19 +66,20 @@ header h1 span {
 }
 
 header nav {
-	padding: 46px 0;
+	padding-bottom: 30px;
 	width: 100%
 }
 header nav ul {
 	margin: 0;
 	padding: 0;
+	list-style-type: none;
 }
 header nav ul li {
 	text-transform: uppercase;
 	font-weight: 700;
 	font-size: 0.875em;
-	padding: 0 10px;
-	display: inline;
+	padding: 10px 0;
+	width: 100%;
 }
 header nav ul li a{
 	text-decoration: none;
@@ -116,22 +117,12 @@ header nav ul li a{
 .section-one,
 .section-two,
 .section-three {
-	width: 33%;
+	width: 100%;
 	border-top: 1px solid #eee;
 }
 
 .section-one h4 {
 	padding: 10px 0;
-}
-
-.section-two {
-	border-left: 1px solid #eee;
-	border-right: 1px solid #eee;
-}
-
-.section-two h4,
-.section-three h4 {
-	padding: 10px 30px;
 }
 
 .menu {
@@ -162,6 +153,7 @@ footer {
 	justify-content: center;
 	align-items: center;
 	flex-flow: row wrap;
+	width: 100%;
 }
 footer span {
 	font-family: 'Galada', cursive;
@@ -188,6 +180,16 @@ footer span {
 		border-right: 1px solid #eee;
 		padding: 0 20px;
 	}
+
+	.section-two h4,
+	.section-three h4 {
+		padding: 10px 30px;
+	}
+
+	header nav ul li {
+		display: inline;
+		padding: 0 10px;
+	}
 }
 
 @media all and (min-width: 1200px) {
@@ -204,6 +206,7 @@ footer span {
 
 	header nav {
 		width: 40%;
+		padding: 46px 0;
 	}
 
 	header nav ul {
